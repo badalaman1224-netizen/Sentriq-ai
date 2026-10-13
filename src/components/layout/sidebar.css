@@ -1,0 +1,136 @@
+.sidebar {
+  width: 260px;
+  min-height: 100vh;
+  background: #0b1020;
+  border-right: 1px solid #1d2638;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 16px;
+  box-sizing: border-box;
+}
+
+.sidebar-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 4px 10px 30px;
+}
+
+.brand-logo {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #5b5cf0, #8b5cf6);
+  color: white;
+  font-size: 22px;
+  font-weight: 800;
+  box-shadow: 0 8px 24px rgba(91, 92, 240, 0.25);
+}
+
+.brand-text h1 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.brand-text span {
+  display: block;
+  margin-top: 3px;
+  color: #7e8aa3;
+  font-size: 11px;
+}
+
+.sidebar-navigation {
+  flex: 1;
+}
+
+.sidebar-title {
+  margin: 0 10px 12px;
+  color: #56627a;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+}
+
+.sidebar-navigation nav {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.sidebar-item {
+  width: 100%;
+  border: 0;
+  background: transparent;
+  color: #8e9ab0;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 12px 13px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: left;
+  font-size: 13px;
+  transition: all 0.2s ease;
+}
+
+.sidebar-item:hover {
+  background: #141b2d;
+  color: #ffffff;
+}
+
+.sidebar-item.active {
+  background: linear-gradient(
+    90deg,
+    rgba(91, 92, 240, 0.18),
+    rgba(91, 92, 240, 0.08)
+  );
+  color: #ffffff;
+  box-shadow: inset 3px 0 0 #6d6ff5;
+}
+
+.sidebar-icon {
+  width: 20px;
+  text-align: center;
+  font-size: 16px;
+  color: #7180ff;
+}
+
+.sidebar-footer {
+  padding-top: 20px;
+}
+
+.security-status {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 13px;
+  border: 1px solid #1d2a3d;
+  background: #101728;
+  border-radius: 12px;
+}
+
+.security-indicator {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #4f35d0;
+  box-shadow: 0 0 10px rgba(89, 53, 208, 0.65);
+}
+
+.security-status strong {
+  display: block;
+  color: #dfe6f3;
+  font-size: 12px;
+}
+
+.security-status span {
+  display: block;
+  margin-top: 3px;
+  color: #66748c;
+  font-size: 10px;
+}

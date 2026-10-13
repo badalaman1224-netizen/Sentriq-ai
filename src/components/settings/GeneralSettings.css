@@ -1,0 +1,711 @@
+.settings-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.settings-card {
+    background: #ffffff;
+    border: 1px solid #e7eaf0;
+    border-radius: 18px;
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+.settings-card-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.settings-card-header>div:first-child span {
+    color: #626cf3;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 1.3px;
+}
+
+.settings-card-header h3 {
+    margin: 6px 0 5px;
+    color: #182033;
+    font-size: 17px;
+}
+
+.settings-card-header p {
+    margin: 0;
+    color: #929caf;
+    font-size: 11px;
+    line-height: 1.6;
+}
+
+.profile-settings {
+    margin-top: 22px;
+    display: flex;
+    align-items: flex-start;
+    gap: 22px;
+}
+
+.profile-avatar-large {
+    width: 68px;
+    height: 68px;
+    flex-shrink: 0;
+    border-radius: 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(135deg, #5b5cf0, #8b5cf6);
+    color: #ffffff;
+
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.profile-fields {
+    flex: 1;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px;
+}
+
+.settings-field {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.settings-field label {
+    color: #596579;
+    font-size: 9px;
+    font-weight: 700;
+}
+
+.settings-field input,
+.settings-field select {
+    width: 100%;
+    height: 41px;
+
+    padding: 0 11px;
+
+    border: 1px solid #dfe3eb;
+    border-radius: 9px;
+
+    background: #ffffff;
+    color: #354055;
+
+    font-size: 10px;
+    outline: none;
+
+    box-sizing: border-box;
+}
+
+.settings-field input:focus,
+.settings-field select:focus {
+    border-color: #6d6ff5;
+    box-shadow: 0 0 0 3px rgba(109, 111, 245, 0.08);
+}
+
+.settings-field input[readonly] {
+    background: #fafbfc;
+    color: #8b95a7;
+}
+
+.settings-field small {
+    color: #929caf;
+    font-size: 8px;
+    line-height: 1.5;
+}
+
+.security-state {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    padding: 7px 10px;
+
+    border-radius: 7px;
+
+    background: #eaf9f1;
+    color: #1aab67;
+
+    font-size: 9px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.security-state span {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #1aab67;
+}
+
+.settings-options {
+    margin-top: 18px;
+}
+
+.setting-row {
+    min-height: 67px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    border-bottom: 1px solid #edf0f4;
+}
+
+.setting-row:last-child {
+    border-bottom: 0;
+}
+
+.setting-row-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.setting-row-info strong {
+    color: #354055;
+    font-size: 11px;
+}
+
+.setting-row-info span {
+    color: #929caf;
+    font-size: 9px;
+    line-height: 1.5;
+}
+
+.toggle {
+    width: 40px;
+    height: 22px;
+    flex-shrink: 0;
+
+    border: 0;
+    border-radius: 20px;
+
+    padding: 3px;
+
+    background: #dfe3eb;
+    cursor: pointer;
+
+    transition: background 0.2s ease;
+}
+
+.toggle span {
+    display: block;
+
+    width: 16px;
+    height: 16px;
+
+    border-radius: 50%;
+
+    background: #ffffff;
+
+    transition: transform 0.2s ease;
+}
+
+.toggle.on {
+    background: #5b5cf0;
+}
+
+.toggle.on span {
+    transform: translateX(18px);
+}
+
+.preference-grid {
+    margin-top: 20px;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.detection-row {
+    margin-top: 10px;
+    border-top: 1px solid #edf0f4;
+}
+
+.appearance-options {
+    margin-top: 20px;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 13px;
+}
+
+.theme-option {
+    padding: 13px;
+
+    border: 1px solid #e3e7ee;
+    border-radius: 12px;
+
+    background: #ffffff;
+
+    display: flex;
+    align-items: center;
+    gap: 13px;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.theme-option:hover {
+    border-color: #bfc4ff;
+}
+
+.theme-option.selected {
+    border-color: #6d6ff5;
+    box-shadow: 0 0 0 3px rgba(109, 111, 245, 0.08);
+}
+
+.theme-preview {
+    width: 72px;
+    height: 48px;
+    flex-shrink: 0;
+
+    border-radius: 7px;
+    padding: 7px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.light-preview {
+    background: #f4f6fa;
+    border: 1px solid #e1e5ec;
+}
+
+.dark-preview {
+    background: #151a2b;
+    border: 1px solid #252d45;
+}
+
+.theme-preview span {
+    height: 5px;
+    border-radius: 4px;
+    background: #cbd1dc;
+}
+
+.theme-preview span:nth-child(1) {
+    width: 55%;
+}
+
+.theme-preview span:nth-child(2) {
+    width: 80%;
+}
+
+.theme-preview span:nth-child(3) {
+    width: 65%;
+}
+
+.theme-option div:last-child {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.theme-option strong {
+    color: #354055;
+    font-size: 11px;
+}
+
+.theme-option div:last-child span {
+    color: #929caf;
+    font-size: 8px;
+}
+
+.security-actions {
+    margin-bottom: 0;
+}
+
+.security-action-row {
+    margin-top: 20px;
+
+    min-height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding: 12px 0;
+}
+
+.security-action-row>div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.security-action-row strong {
+    color: #354055;
+    font-size: 11px;
+}
+
+.security-action-row span {
+    color: #929caf;
+    font-size: 9px;
+}
+
+.secondary-settings-button {
+    border: 1px solid #dfe3eb;
+    border-radius: 8px;
+
+    padding: 9px 13px;
+
+    background: #ffffff;
+    color: #5b5cf0;
+
+    font-size: 9px;
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+.secondary-settings-button:hover {
+    background: #f5f6ff;
+}
+
+.action-message {
+    margin-top: 10px;
+
+    padding: 11px;
+
+    border-radius: 9px;
+
+    background: #f4f5ff;
+    color: #5b5cf0;
+
+    font-size: 9px;
+    line-height: 1.5;
+}
+
+.settings-save-bar {
+    min-height: 58px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+.save-message-area {
+    min-height: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.save-success {
+    color: #1aab67;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.settings-action-buttons {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.reset-settings-button {
+    border: 1px solid #dfe3eb;
+    border-radius: 9px;
+
+    padding: 11px 17px;
+
+    background: #ffffff;
+    color: #687386;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+.reset-settings-button:hover {
+    background: #f7f8fa;
+}
+
+.save-settings-button {
+    border: 0;
+    border-radius: 9px;
+
+    padding: 11px 18px;
+
+    background: #5b5cf0;
+    color: #ffffff;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+.save-settings-button:hover {
+    background: #4e50df;
+}
+
+/* DARK MODE */
+
+body.sentriq-dark {
+    background: #101522;
+}
+
+body.sentriq-dark .settings-card {
+    background: #171d2b;
+    border-color: #273148;
+}
+
+body.sentriq-dark .settings-card-header h3,
+body.sentriq-dark .settings-field input,
+body.sentriq-dark .settings-field select,
+body.sentriq-dark .setting-row-info strong,
+body.sentriq-dark .security-action-row strong {
+    color: #edf1fa;
+}
+
+body.sentriq-dark .settings-card-header p,
+body.sentriq-dark .settings-field small,
+body.sentriq-dark .setting-row-info span,
+body.sentriq-dark .security-action-row span {
+    color: #8f9bb1;
+}
+
+body.sentriq-dark .settings-field input,
+body.sentriq-dark .settings-field select,
+body.sentriq-dark .theme-option,
+body.sentriq-dark .secondary-settings-button,
+body.sentriq-dark .reset-settings-button {
+    background: #111827;
+    border-color: #303a52;
+    color: #e5eaf4;
+}
+
+body.sentriq-dark .settings-field input[readonly] {
+    background: #20283a;
+}
+
+body.sentriq-dark .setting-row {
+    border-color: #283148;
+}
+
+body.sentriq-dark .theme-option.selected {
+    border-color: #6d6ff5;
+}
+
+body.sentriq-dark .light-preview {
+    background: #e8ebf2;
+}
+
+@media (max-width: 750px) {
+    .profile-settings {
+        flex-direction: column;
+    }
+
+    .profile-fields,
+    .preference-grid,
+    .appearance-options {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    .security-action-row {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 550px) {
+    .settings-card {
+        padding: 18px;
+    }
+
+    .settings-card-header {
+        flex-direction: column;
+    }
+
+    .setting-row {
+        padding: 10px 0;
+    }
+
+    .settings-save-bar {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
+/* =========================================
+   GLOBAL DARK MODE
+   ========================================= */
+
+body.sentriq-dark {
+    background: #0f1420;
+    color: #edf1fa;
+}
+
+body.sentriq-dark .main-area {
+    background: #0f1420;
+}
+
+body.sentriq-dark .page-content {
+    background: #0f1420;
+}
+
+/* TOPBAR */
+
+body.sentriq-dark .topbar {
+    background: #151b29;
+    border-color: #283148;
+}
+
+body.sentriq-dark .topbar-heading h2 {
+    color: #edf1fa;
+}
+
+body.sentriq-dark .topbar-heading p {
+    color: #8f9bb1;
+}
+
+body.sentriq-dark .notification-button {
+    background: #1b2232;
+    border-color: #303a52;
+}
+
+body.sentriq-dark .topbar-user strong {
+    color: #edf1fa;
+}
+
+/* DASHBOARD */
+
+body.sentriq-dark .stat-card,
+body.sentriq-dark .risk-trend,
+body.sentriq-dark .risk-distribution,
+body.sentriq-dark .recent-scans {
+    background: #171d2b;
+    border-color: #283148;
+}
+
+body.sentriq-dark .stat-title,
+body.sentriq-dark .stat-description,
+body.sentriq-dark .risk-trend-header p,
+body.sentriq-dark .risk-distribution-header p,
+body.sentriq-dark .recent-scans-header p {
+    color: #8f9bb1;
+}
+
+body.sentriq-dark .stat-value,
+body.sentriq-dark .risk-trend-header h3,
+body.sentriq-dark .risk-distribution-header h3,
+body.sentriq-dark .recent-scans-header h3 {
+    color: #edf1fa;
+}
+
+body.sentriq-dark .stat-card:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* TABLES */
+
+body.sentriq-dark .recent-table-row,
+body.sentriq-dark .history-row,
+body.sentriq-dark .report-row {
+    border-color: #283148;
+}
+
+body.sentriq-dark .transaction-cell strong,
+body.sentriq-dark .amount-cell,
+body.sentriq-dark .history-transaction strong,
+body.sentriq-dark .history-amount,
+body.sentriq-dark .report-name strong {
+    color: #edf1fa;
+}
+
+/* PAGE CARDS */
+
+body.sentriq-dark .history-page-header,
+body.sentriq-dark .history-filters,
+body.sentriq-dark .history-table-card,
+body.sentriq-dark .risk-analysis-header,
+body.sentriq-dark .risk-overview,
+body.sentriq-dark .risk-categories,
+body.sentriq-dark .risk-factors,
+body.sentriq-dark .alerts-page-header,
+body.sentriq-dark .alert-card,
+body.sentriq-dark .beneficiaries-page-header,
+body.sentriq-dark .beneficiary-card,
+body.sentriq-dark .reports-page-header,
+body.sentriq-dark .report-summary-card,
+body.sentriq-dark .report-table-card,
+body.sentriq-dark .ml-insights-header,
+body.sentriq-dark .model-overview,
+body.sentriq-dark .detection-metrics,
+body.sentriq-dark .feature-importance,
+body.sentriq-dark .coming-soon {
+    background: #171d2b;
+    border-color: #283148;
+}
+
+/* FORM INPUTS */
+
+body.sentriq-dark input,
+body.sentriq-dark select {
+    background: #111827;
+    border-color: #303a52;
+    color: #edf1fa;
+}
+
+body.sentriq-dark input::placeholder {
+    color: #68758d;
+}
+
+/* EMPTY / SECONDARY AREAS */
+
+body.sentriq-dark .chart-grid-lines span {
+    background: #283148;
+}
+
+body.sentriq-dark .risk-category-item,
+body.sentriq-dark .risk-factor-item,
+body.sentriq-dark .transaction-score,
+body.sentriq-dark .analysis-details>div,
+body.sentriq-dark .transaction-meta>div,
+body.sentriq-dark .beneficiary-details>div,
+body.sentriq-dark .report-summary-card,
+body.sentriq-dark .model-score-card,
+body.sentriq-dark .model-information>div,
+body.sentriq-dark .metric-footer>div {
+    background: #111827;
+    border-color: #283148;
+}
+
+/* BUTTONS */
+
+body.sentriq-dark .view-history-button,
+body.sentriq-dark .module-open-button,
+body.sentriq-dark .report-action,
+body.sentriq-dark .secondary-settings-button,
+body.sentriq-dark .reset-settings-button {
+    background: #171d2b;
+    border-color: #303a52;
+}
+
+/* COMING SOON */
+
+body.sentriq-dark .coming-soon h2 {
+    color: #edf1fa;
+}
+
+body.sentriq-dark .coming-soon p {
+    color: #8f9bb1;
+}

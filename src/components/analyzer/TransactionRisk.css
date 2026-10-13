@@ -1,0 +1,282 @@
+.transaction-risk-card {
+  background: #ffffff;
+  border: 1px solid #e7eaf0;
+  border-radius: 18px;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.transaction-risk-empty {
+  min-height: 100%;
+  min-height: 430px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.transaction-risk-icon {
+  width: 58px;
+  height: 58px;
+  border-radius: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #f0f1ff;
+  color: #5b5cf0;
+
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.transaction-risk-empty h3 {
+  margin: 0;
+  color: #182033;
+  font-size: 17px;
+}
+
+.transaction-risk-empty p {
+  max-width: 350px;
+  margin: 9px 0 0;
+  color: #8b95a7;
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+.transaction-risk-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.transaction-risk-header > div:first-child span {
+  color: #626cf3;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1.3px;
+}
+
+.transaction-risk-header h3 {
+  margin: 6px 0 0;
+  color: #182033;
+  font-size: 17px;
+}
+
+.transaction-status {
+  padding: 7px 10px;
+  border-radius: 7px;
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.transaction-status.safe {
+  background: #eaf9f1;
+  color: #1aab67;
+}
+
+.transaction-status.medium {
+  background: #fff7e4;
+  color: #c78a16;
+}
+
+.transaction-status.high {
+  background: #fff0f0;
+  color: #e34b4b;
+}
+
+.transaction-score {
+  margin-top: 25px;
+  padding: 20px;
+  background: #f8f9fc;
+  border-radius: 14px;
+
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.transaction-score-ring {
+  --risk-progress: 0deg;
+
+  width: 112px;
+  height: 112px;
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background: conic-gradient(
+    #5b5cf0 0deg,
+    #5b5cf0 var(--risk-progress),
+    #edf0f5 var(--risk-progress),
+    #edf0f5 360deg
+  );
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.transaction-score-ring.high {
+  background: conic-gradient(
+    #e34b4b 0deg,
+    #e34b4b var(--risk-progress),
+    #edf0f5 var(--risk-progress),
+    #edf0f5 360deg
+  );
+}
+
+.transaction-score-ring.medium {
+  background: conic-gradient(
+    #f4b740 0deg,
+    #f4b740 var(--risk-progress),
+    #edf0f5 var(--risk-progress),
+    #edf0f5 360deg
+  );
+}
+
+.transaction-score-ring::before {
+  content: "";
+
+  position: absolute;
+
+  width: 84px;
+  height: 84px;
+
+  border-radius: 50%;
+  background: #f8f9fc;
+}
+
+.transaction-score-center {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.transaction-score-center strong {
+  color: #182033;
+  font-size: 27px;
+}
+
+.transaction-score-center span {
+  color: #8b95a7;
+  font-size: 10px;
+}
+
+.transaction-score-details > span {
+  color: #8b95a7;
+  font-size: 10px;
+}
+
+.transaction-score-details h4 {
+  margin: 5px 0;
+
+  color: #e34b4b;
+  font-size: 19px;
+}
+
+.transaction-score-details p {
+  margin: 0;
+
+  color: #7d8798;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.transaction-indicators {
+  margin-top: 22px;
+}
+
+.transaction-indicators > h4 {
+  margin: 0 0 12px;
+  color: #273044;
+  font-size: 13px;
+}
+
+.transaction-indicator {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+
+  padding: 11px;
+
+  background: #fff8f8;
+  border-radius: 9px;
+
+  margin-bottom: 8px;
+}
+
+.indicator-mark {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #ffe5e5;
+  color: #e34b4b;
+
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.transaction-indicator strong {
+  display: block;
+  color: #4b5567;
+  font-size: 10px;
+}
+
+.transaction-indicator div > span {
+  display: block;
+  margin-top: 3px;
+  color: #9099a9;
+  font-size: 9px;
+  line-height: 1.5;
+}
+
+.transaction-meta {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 9px;
+  margin-top: 18px;
+}
+
+.transaction-meta > div {
+  padding: 11px;
+  border: 1px solid #edf0f4;
+  border-radius: 9px;
+}
+
+.transaction-meta span {
+  display: block;
+  color: #929caf;
+  font-size: 9px;
+}
+
+.transaction-meta strong {
+  display: block;
+  margin-top: 5px;
+  color: #2d3547;
+  font-size: 11px;
+}
+
+@media (max-width: 650px) {
+  .transaction-score {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .transaction-meta {
+    grid-template-columns: 1fr;
+  }
+}

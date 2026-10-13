@@ -1,0 +1,86 @@
+.risk-analysis-page {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.risk-analysis-header {
+  background: #ffffff;
+  border: 1px solid #e7eaf0;
+  border-radius: 18px;
+  padding: 24px 26px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+
+  box-sizing: border-box;
+}
+
+.risk-analysis-header > div:first-child span {
+  color: #626cf3;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1.4px;
+}
+
+.risk-analysis-header h1 {
+  margin: 7px 0 5px;
+  color: #182033;
+  font-size: 25px;
+}
+
+.risk-analysis-header p {
+  margin: 0;
+  color: #8993a4;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.risk-analysis-date {
+  padding: 10px 13px;
+  border: 1px solid #e8ebf1;
+  border-radius: 9px;
+  background: #fafbfc;
+  min-width: 90px;
+}
+
+.risk-analysis-date span {
+  display: block;
+  color: #99a2b1;
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+}
+
+.risk-analysis-date strong {
+  display: block;
+  margin-top: 4px;
+  color: #3a4355;
+  font-size: 11px;
+}
+
+.risk-analysis-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 18px;
+  align-items: stretch;
+}
+
+@media (max-width: 900px) {
+  .risk-analysis-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .risk-analysis-header {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .risk-analysis-header h1 {
+    font-size: 21px;
+  }
+}

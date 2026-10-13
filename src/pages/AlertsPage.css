@@ -1,0 +1,152 @@
+.alerts-page {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.alerts-page-header {
+  background: #ffffff;
+  border: 1px solid #e7eaf0;
+  border-radius: 18px;
+  padding: 24px 26px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+
+  box-sizing: border-box;
+}
+
+.alerts-page-header > div:first-child span {
+  color: #626cf3;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1.4px;
+}
+
+.alerts-page-header h1 {
+  margin: 7px 0 5px;
+  color: #182033;
+  font-size: 25px;
+}
+
+.alerts-page-header p {
+  margin: 0;
+  color: #8993a4;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.alerts-summary {
+  min-width: 100px;
+  padding: 10px 13px;
+
+  border: 1px solid #e8ebf1;
+  border-radius: 9px;
+
+  background: #fff8f8;
+  text-align: center;
+}
+
+.alerts-summary span {
+  display: block;
+  color: #a17f7f;
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+}
+
+.alerts-summary strong {
+  display: block;
+  margin-top: 4px;
+  color: #e34b4b;
+  font-size: 18px;
+}
+
+.alerts-list {
+  background: transparent;
+}
+
+.alerts-list-header {
+  margin-bottom: 12px;
+}
+
+.alerts-list-header h2 {
+  margin: 0;
+  color: #263045;
+  font-size: 16px;
+}
+
+.alerts-list-header p {
+  margin: 5px 0 0;
+  color: #929caf;
+  font-size: 10px;
+}
+
+.alert-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.alerts-empty {
+  min-height: 260px;
+
+  border: 1px solid #e7eaf0;
+  border-radius: 16px;
+  background: #ffffff;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.alerts-empty-icon {
+  width: 52px;
+  height: 52px;
+
+  border-radius: 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #eaf9f1;
+  color: #1aab67;
+
+  font-size: 21px;
+  font-weight: 800;
+
+  margin-bottom: 14px;
+}
+
+.alerts-empty h3 {
+  margin: 0;
+  color: #182033;
+  font-size: 16px;
+}
+
+.alerts-empty p {
+  margin: 7px 0 0;
+  color: #929caf;
+  font-size: 10px;
+}
+
+@media (max-width: 600px) {
+  .alerts-page-header {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .alerts-page-header h1 {
+    font-size: 21px;
+  }
+
+  .alerts-summary {
+    align-self: flex-start;
+  }
+}

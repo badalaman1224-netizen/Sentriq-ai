@@ -1,0 +1,41 @@
+.app-layout {
+  min-height: 100vh;
+  display: flex;
+  background: #f6f7fb;
+}
+
+.main-area {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-content {
+  flex: 1;
+  padding: 28px 32px 40px;
+  box-sizing: border-box;
+}
+
+.dashboard-page {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.dashboard-charts {
+  display: grid;
+  grid-template-columns: minmax(0, 1.65fr) minmax(320px, 1fr);
+  gap: 18px;
+}
+@media (max-width: 1050px) {
+  .dashboard-charts {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 750px) {
+  .page-content {
+    padding: 20px 16px 30px;
+  }
+}

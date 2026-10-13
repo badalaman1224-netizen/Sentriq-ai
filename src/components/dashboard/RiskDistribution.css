@@ -1,0 +1,143 @@
+.risk-distribution {
+  background: #ffffff;
+  border: 1px solid #e7eaf0;
+  border-radius: 16px;
+  padding: 22px;
+  box-sizing: border-box;
+}
+
+.risk-distribution-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.risk-distribution-header h3 {
+  margin: 0;
+  color: #182033;
+  font-size: 16px;
+}
+
+.risk-distribution-header p {
+  margin: 5px 0 0;
+  color: #929caf;
+  font-size: 11px;
+}
+
+.risk-distribution-content {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.risk-donut {
+  width: 155px;
+  height: 155px;
+  flex-shrink: 0;
+  border-radius: 50%;
+
+  background: conic-gradient(
+    #5b5cf0 0deg 334.8deg,
+    #f4b740 334.8deg 352.8deg,
+    #e34b4b 352.8deg 360deg
+  );
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.risk-donut::before {
+  content: "";
+  width: 108px;
+  height: 108px;
+  border-radius: 50%;
+  background: #ffffff;
+  position: absolute;
+}
+
+.risk-donut-center {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.risk-donut-center strong {
+  display: block;
+  color: #182033;
+  font-size: 25px;
+  line-height: 1;
+}
+
+.risk-donut-center span {
+  display: block;
+  margin-top: 5px;
+  color: #8b95a7;
+  font-size: 10px;
+}
+
+.risk-legend {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.risk-legend-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.risk-legend-name {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #657187;
+  font-size: 11px;
+}
+
+.risk-legend-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.risk-legend-dot.safe {
+  background: #5b5cf0;
+}
+
+.risk-legend-dot.medium {
+  background: #f4b740;
+}
+
+.risk-legend-dot.high {
+  background: #e34b4b;
+}
+
+.risk-legend-value {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+}
+
+.risk-legend-value strong {
+  color: #20283a;
+  font-size: 12px;
+}
+
+.risk-legend-value span {
+  color: #a0a8b7;
+  font-size: 9px;
+}
+
+@media (max-width: 700px) {
+  .risk-distribution-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

@@ -1,0 +1,123 @@
+.risk-categories {
+  background: #ffffff;
+  border: 1px solid #e7eaf0;
+  border-radius: 18px;
+  padding: 24px;
+}
+
+.risk-categories-header h3 {
+  margin: 0;
+  color: #182033;
+  font-size: 17px;
+}
+
+.risk-categories-header p {
+  margin: 5px 0 0;
+  color: #929caf;
+  font-size: 11px;
+}
+
+.risk-category-list {
+  margin-top: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.risk-category-item {
+  padding: 15px;
+  border: 1px solid #edf0f4;
+  border-radius: 12px;
+  background: #fbfcfe;
+}
+
+.risk-category-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.risk-category-title {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.category-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+}
+
+.category-dot.safe {
+  background: #22b573;
+}
+
+.category-dot.medium {
+  background: #f4b740;
+}
+
+.category-dot.high {
+  background: #e34b4b;
+}
+
+.risk-category-title strong {
+  color: #354055;
+  font-size: 11px;
+}
+
+.category-percentage {
+  color: #273044;
+  font-size: 13px;
+}
+
+.category-progress {
+  height: 7px;
+  margin-top: 11px;
+  border-radius: 10px;
+  background: #edf0f4;
+  overflow: hidden;
+}
+
+.category-progress-fill {
+  height: 100%;
+  border-radius: 10px;
+}
+
+.category-progress-fill.safe {
+  background: #22b573;
+}
+
+.category-progress-fill.medium {
+  background: #f4b740;
+}
+
+.category-progress-fill.high {
+  background: #e34b4b;
+}
+
+.risk-category-bottom {
+  margin-top: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.risk-category-bottom span {
+  color: #929caf;
+  font-size: 9px;
+}
+
+.risk-category-bottom strong {
+  color: #667286;
+  font-size: 9px;
+}
+
+@media (max-width: 550px) {
+  .risk-category-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

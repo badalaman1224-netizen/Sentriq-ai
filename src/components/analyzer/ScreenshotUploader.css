@@ -1,0 +1,80 @@
+.screenshot-uploader {
+  min-height: 330px;
+  border: 2px dashed #d9deea;
+  border-radius: 18px;
+  background: #ffffff;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  padding: 35px;
+  box-sizing: border-box;
+
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.screenshot-uploader:hover {
+  border-color: #6d6ff5;
+  background: #fafaff;
+}
+
+.uploader-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 18px;
+
+  background: #eef0ff;
+  color: #5b5cf0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 27px;
+  margin-bottom: 18px;
+}
+
+.screenshot-uploader h3 {
+  margin: 0;
+  color: #182033;
+  font-size: 19px;
+}
+
+.screenshot-uploader p {
+  max-width: 500px;
+  margin: 10px 0 20px;
+
+  color: #8490a3;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.browse-button {
+  border: 0;
+  border-radius: 9px;
+
+  padding: 12px 20px;
+
+  background: #5b5cf0;
+  color: #ffffff;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.browse-button:hover {
+  background: #4d4ee0;
+  transform: translateY(-1px);
+}
+
+.upload-hint {
+  margin-top: 13px;
+  color: #a1a9b8;
+  font-size: 10px;
+}

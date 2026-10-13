@@ -1,0 +1,134 @@
+.report-table-card {
+  background: #ffffff;
+  border: 1px solid #e7eaf0;
+  border-radius: 16px;
+  padding: 22px;
+  box-sizing: border-box;
+}
+
+.report-table-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.report-table-header h3 {
+  margin: 0;
+  color: #182033;
+  font-size: 16px;
+}
+
+.report-table-header p {
+  margin: 5px 0 0;
+  color: #929caf;
+  font-size: 10px;
+}
+
+.generate-report-button {
+  border: 0;
+  border-radius: 8px;
+  padding: 10px 13px;
+  background: #5b5cf0;
+  color: #ffffff;
+  font-size: 9px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.report-table-wrapper {
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+.report-table {
+  min-width: 800px;
+}
+
+.report-row {
+  min-height: 63px;
+
+  display: grid;
+  grid-template-columns:
+    2fr
+    1.2fr
+    1.2fr
+    1fr
+    0.8fr;
+
+  align-items: center;
+  gap: 16px;
+
+  border-bottom: 1px solid #eef0f4;
+}
+
+.report-row:last-child {
+  border-bottom: 0;
+}
+
+.report-heading {
+  min-height: 40px;
+  color: #8b95a7;
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.report-name {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.report-name strong {
+  color: #293246;
+  font-size: 11px;
+}
+
+.report-name span,
+.report-type,
+.report-period {
+  color: #687386;
+  font-size: 10px;
+}
+
+.report-name span {
+  color: #9aa3b2;
+  font-size: 8px;
+}
+
+.report-status {
+  width: fit-content;
+  padding: 5px 8px;
+  border-radius: 6px;
+  font-size: 8px;
+  font-weight: 700;
+}
+
+.report-status.ready {
+  background: #eaf9f1;
+  color: #1aab67;
+}
+
+.report-status.processing {
+  background: #fff7e4;
+  color: #c78a16;
+}
+
+.report-action {
+  width: fit-content;
+  border: 1px solid #dfe3eb;
+  border-radius: 7px;
+  padding: 6px 10px;
+  background: #ffffff;
+  color: #5b5cf0;
+  font-size: 9px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.report-action:disabled {
+  color: #a0a8b7;
+  cursor: not-allowed;
+  background: #fafbfc;
+}

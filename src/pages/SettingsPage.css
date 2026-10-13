@@ -1,0 +1,78 @@
+.settings-page {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.settings-page-header {
+  background: #ffffff;
+  border: 1px solid #e7eaf0;
+  border-radius: 18px;
+
+  padding: 24px 26px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+
+  box-sizing: border-box;
+}
+
+.settings-page-header > div:first-child span {
+  color: #626cf3;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1.4px;
+}
+
+.settings-page-header h1 {
+  margin: 7px 0 5px;
+  color: #182033;
+  font-size: 25px;
+}
+
+.settings-page-header p {
+  margin: 0;
+  color: #8993a4;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.settings-version {
+  min-width: 80px;
+
+  padding: 10px 13px;
+
+  border: 1px solid #e8ebf1;
+  border-radius: 9px;
+
+  background: #fafbfc;
+  text-align: center;
+}
+
+.settings-version span {
+  display: block;
+  color: #99a2b1;
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+}
+
+.settings-version strong {
+  display: block;
+  margin-top: 4px;
+  color: #3a4355;
+  font-size: 12px;
+}
+
+@media (max-width: 600px) {
+  .settings-page-header {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .settings-page-header h1 {
+    font-size: 21px;
+  }
+}

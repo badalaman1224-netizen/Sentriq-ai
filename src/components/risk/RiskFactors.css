@@ -1,0 +1,145 @@
+.risk-factors {
+  background: #ffffff;
+  border: 1px solid #e7eaf0;
+  border-radius: 18px;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.risk-factors-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.risk-factors-header h3 {
+  margin: 0;
+  color: #182033;
+  font-size: 17px;
+}
+
+.risk-factors-header p {
+  margin: 5px 0 0;
+  color: #929caf;
+  font-size: 11px;
+}
+
+.factor-count {
+  padding: 7px 10px;
+  border-radius: 7px;
+  background: #f0f1ff;
+  color: #5b5cf0;
+  font-size: 9px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.risk-factor-list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.risk-factor-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+
+  padding: 13px;
+
+  border: 1px solid #edf0f4;
+  border-radius: 11px;
+
+  background: #fbfcfe;
+}
+
+.factor-icon {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.factor-icon.high {
+  background: #fff0f0;
+  color: #e34b4b;
+}
+
+.factor-icon.medium {
+  background: #fff7e4;
+  color: #c78a16;
+}
+
+.factor-icon.low {
+  background: #eef7ff;
+  color: #4a86c5;
+}
+
+.factor-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.factor-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.factor-title-row strong {
+  color: #354055;
+  font-size: 11px;
+}
+
+.factor-severity {
+  padding: 4px 7px;
+  border-radius: 6px;
+  font-size: 8px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.factor-severity.high {
+  background: #fff0f0;
+  color: #e34b4b;
+}
+
+.factor-severity.medium {
+  background: #fff7e4;
+  color: #c78a16;
+}
+
+.factor-severity.low {
+  background: #eef7ff;
+  color: #4a86c5;
+}
+
+.factor-content p {
+  margin: 5px 0 0;
+  color: #9099a9;
+  font-size: 9px;
+  line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+  .risk-factors-header {
+    flex-direction: column;
+  }
+
+  .factor-title-row {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 6px;
+  }
+}

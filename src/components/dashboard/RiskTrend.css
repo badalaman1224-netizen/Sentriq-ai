@@ -1,0 +1,132 @@
+.risk-trend {
+  background: #ffffff;
+  border: 1px solid #e7eaf0;
+  border-radius: 16px;
+  padding: 22px;
+  box-sizing: border-box;
+}
+
+.risk-trend-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.risk-trend-header h3 {
+  margin: 0;
+  color: #182033;
+  font-size: 16px;
+}
+
+.risk-trend-header p {
+  margin: 5px 0 0;
+  color: #929caf;
+  font-size: 11px;
+}
+
+.risk-period {
+  padding: 8px 11px;
+  border: 1px solid #e2e6ed;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #687387;
+  font-size: 11px;
+  outline: none;
+  cursor: pointer;
+}
+
+.risk-chart {
+  height: 245px;
+  margin-top: 24px;
+  display: flex;
+}
+
+.chart-y-axis {
+  width: 34px;
+  height: 190px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.chart-y-axis span {
+  color: #a0a9b8;
+  font-size: 9px;
+}
+
+.chart-area {
+  flex: 1;
+  position: relative;
+  height: 220px;
+}
+
+.chart-grid-lines {
+  position: absolute;
+  inset: 0 0 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.chart-grid-lines span {
+  width: 100%;
+  height: 1px;
+  background: #edf0f4;
+}
+
+.chart-bars {
+  position: absolute;
+  inset: 0;
+  padding: 0 8px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+
+.chart-column {
+  height: 100%;
+  width: 9%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 9px;
+}
+
+.risk-bar {
+  width: 18px;
+  min-height: 12px;
+  border-radius: 7px 7px 3px 3px;
+  background: linear-gradient(
+    to top,
+    #5b5cf0,
+    #8b5cf6
+  );
+  transition: height 0.4s ease, transform 0.2s ease;
+}
+
+.risk-bar:hover {
+  transform: scaleX(1.15);
+}
+
+.chart-column span {
+  color: #8b95a7;
+  font-size: 9px;
+}
+
+@media (max-width: 700px) {
+  .risk-trend {
+    padding: 16px;
+  }
+
+  .risk-period {
+    font-size: 10px;
+  }
+
+  .risk-bar {
+    width: 13px;
+  }
+}
